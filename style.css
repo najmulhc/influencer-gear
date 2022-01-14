@@ -4,15 +4,49 @@
 /* basic styles to define some easy staffs */
 h1{
     font-size: 70px;
+    margin: 0;
 }
 h2{
     font-size: 38px;
+    margin: 0;
 }
 h3{
     font-size: 24px;
 }
-
-
+.container{
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+body{
+    font-family: poppins;
+}
+ul{
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+}
+li{
+    list-style: none;
+}
+/* navigation styles */
+nav, .nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+nav li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(32, 32, 32);
+    margin: 0 20px;
+}
+nav ul li a:hover{
+    color: #0A0826;
+}
 /* footer styles */
 footer{
     width: 100%;
@@ -27,6 +61,7 @@ footer{
 footer ul{
     display: flex;
     justify-content: center;
+    margin-top: 30px;
     margin-left: 0;padding-left: 0;
 }
 footer ul li, #insta{
@@ -59,3 +94,30 @@ footer ul li a i{
     color: white;
     font-size: 30px;
 }
+
+/* responsive  */
+
+/* for tabs */
+
+@media screen and (max-width:992px){
+    .container {
+        width: 100%;
+    }
+    .manu{
+        display: none;
+    }
+}
+
+
+/* mobile device only  */
+@media screen and (max-width: 680px) {
+    .container {
+      width: 100%;
+    }
+    h2{
+        font-size: 24px;
+    }
+    .manu{
+        display: none;
+    }
+  }
