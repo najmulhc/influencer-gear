@@ -50,7 +50,41 @@ nav li a{
 nav ul li a:hover{
     color: #0A0826;
 }
-
+/* main header section of the camera  */
+.top-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.top-content{
+    width: 50%;
+    padding: 50px;
+}
+.top-image{
+    background-image: url(images/Circle\ design.svg);
+  
+    background-repeat: no-repeat;
+    background-position-x: 37px ;
+}
+.toptext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+.toptext button{
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 18px ;
+    font-weight: 500;
+    color: white;
+    border: none;
+  background-color:#E02C6D ;
+  transition: all .3s ease-in;
+}
+.toptext button:hover{
+    transform:translateX(250px);
+}
 /* e commers logo part  */
 .logo-wrapper{
     display: grid;
@@ -79,7 +113,7 @@ nav ul li a:hover{
 
 .single-product{
     border-radius: 20px;
-    box-shadow: 0 0 20px #29292993;
+    box-shadow: 0 0 10px #29292993;
     margin: 20px;
     padding: 25px;
 }
