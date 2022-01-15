@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* basic styles to define some easy staffs */
+*{
+    margin: 0;padding: 0;
+}
 h1{
     font-size: 70px;
     margin: 0;
@@ -46,6 +49,74 @@ nav li a{
 }
 nav ul li a:hover{
     color: #0A0826;
+}
+
+/* e commers logo part  */
+.logo-wrapper{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr );
+}
+.logo-wrapper img{
+    width: 70%;
+    height: 70%;
+    margin: 10px 30px;
+}
+.logo-wrapper img:hover{
+    fill:#787885;
+}
+
+/* product card styles */
+#title{
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 0;
+}
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+.single-product{
+    border-radius: 20px;
+    box-shadow: 0 0 20px #29292993;
+    margin: 20px;
+    padding: 25px;
+}
+.single-product img{
+    width: 100%;
+}
+.single-product h3{
+    font-weight: 600;
+    font-family: inter;
+    font-size: 48px;
+    margin-top: 20px;
+
+}
+.single-product h4{
+    font-size: 32px;
+    font-weight: 300;
+    color: #878785;
+}
+.single-product ul{
+    margin-top: 10px;
+}
+.single-product p:last-child{
+    margin-left: 10px;
+    font-weight: 500;
+}
+.single-product li{
+    color: orange; 
+}
+.single-product h5{
+    margin-top: 20px;
+    font-family: inter;
+    color: #787885;
+    font-size: 14px;
+
+}
+.not-filled{
+    color: #787885;
 }
 /* footer styles */
 footer{
@@ -106,11 +177,27 @@ footer ul li a i{
     .manu{
         display: none;
     }
+    .products{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .logo-wrapper{
+        grid-template-columns: repeat(3, 1fr );
+        
+    }
 }
 
 
 /* mobile device only  */
 @media screen and (max-width: 680px) {
+    nav h2
+    {
+        font-size: 2.5em;
+        padding: 20px 0;
+    }
+    .nav-icons ul li a i{
+        font-size: 2em;
+    }
     .container {
       width: 100%;
     }
@@ -118,6 +205,12 @@ footer ul li a i{
         font-size: 24px;
     }
     .manu{
+        display: none;
+    }
+    .products{
+        grid-template-columns: 1fr;
+    }
+    .logo-wrapper{
         display: none;
     }
   }
