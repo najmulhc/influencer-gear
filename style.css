@@ -23,6 +23,7 @@ h3{
 }
 body{
     font-family: poppins;
+    color: #3a3a3a;
 }
 ul{
     display: flex;
@@ -69,7 +70,7 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
+    margin-top: 40px;
 }
 .toptext button{
     padding: 10px 15px;
@@ -151,7 +152,22 @@ nav ul li a:hover{
 }
 .not-filled{
     color: #787885;
+
 }
+/* my section styles */
+.my-section{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+}
+.my-text, my-image img{
+    height: 50%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+
+
 /* footer styles */
 footer{
     width: 100%;
@@ -180,7 +196,11 @@ footer ul li, #insta{
     justify-content: center;
     align-items: center;
 }
-
+#special-text{
+    color: #d9317a;
+    text-align: right;
+    margin-bottom: 30px;
+}
 
 /* insta hover gradient copied from google */
 #insta:hover{
@@ -219,6 +239,25 @@ footer ul li a i{
         grid-template-columns: repeat(3, 1fr );
         
     }
+    #special-text{
+        text-align: center;
+    }
+    .top-wrapper{
+        transform: scale(.9);
+        align-items: center;
+    }
+    .my-section{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .my-section img{
+        width: 100%;
+    }
+    .my-text, .my-image img{
+        height: 80%;
+        display: flex;
+        align-self: center;
+    }
 }
 
 
@@ -247,4 +286,34 @@ footer ul li a i{
     .logo-wrapper{
         display: none;
     }
-  }
+    .top-wrapper{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .top-image img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .toptext, .top-image{
+        width: 100%;
+        margin-left: 0;
+    }
+    .toptext{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    #special-text{
+        text-align: center;
+    }
+    .my-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .my-section img{
+        width: 70%;
+    }
+    .my-text, .my-image img{
+    
+    }
+}
+  
