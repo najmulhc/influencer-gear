@@ -114,7 +114,7 @@ nav ul li a:hover{
 
 .single-product{
     border-radius: 20px;
-    box-shadow: 0 0 10px #29292993;
+    box-shadow: 0 0 10px #29292978;
     margin: 20px;
     padding: 25px;
 }
@@ -159,6 +159,7 @@ nav ul li a:hover{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 30px;
+    margin-bottom: 40px;
 }
 .my-text, my-image img{
     height: 50%;
@@ -313,7 +314,7 @@ footer ul li a i{
         width: 70%;
     }
     .my-text, .my-image img{
-    
+        display: flex;justify-self: center;
     }
 }
   
